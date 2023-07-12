@@ -28,175 +28,282 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.open = new System.Windows.Forms.Button();
-            this.save = new System.Windows.Forms.Button();
-            this.add = new System.Windows.Forms.Button();
-            this.delete = new System.Windows.Forms.Button();
-            this.itemList = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.idT = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.typeCom = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.childTypeCom = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.desT = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            open = new Button();
+            save = new Button();
+            add = new Button();
+            delete = new Button();
+            itemList = new ListBox();
+            label1 = new Label();
+            idT = new TextBox();
+            label2 = new Label();
+            typeCom = new ComboBox();
+            label3 = new Label();
+            childTypeCom = new ComboBox();
+            label4 = new Label();
+            desT = new TextBox();
+            label5 = new Label();
+            sourceTypeCom = new ComboBox();
+            addMap = new Button();
+            deleteMap = new Button();
+            sourceMapList = new ListBox();
+            sourceIdT = new TextBox();
+            sourceType = new Label();
+            label6 = new Label();
+            SuspendLayout();
             // 
             // open
             // 
-            this.open.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.open.Location = new System.Drawing.Point(87, 30);
-            this.open.Name = "open";
-            this.open.Size = new System.Drawing.Size(93, 42);
-            this.open.TabIndex = 0;
-            this.open.Text = "打开";
-            this.open.UseVisualStyleBackColor = true;
-            this.open.Click += new System.EventHandler(this.open_Click);
+            open.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            open.Location = new Point(99, 35);
+            open.Margin = new Padding(3, 4, 3, 4);
+            open.Name = "open";
+            open.Size = new Size(106, 49);
+            open.TabIndex = 0;
+            open.Text = "打开";
+            open.UseVisualStyleBackColor = true;
+            open.Click += open_Click;
             // 
             // save
             // 
-            this.save.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.save.Location = new System.Drawing.Point(229, 30);
-            this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(93, 42);
-            this.save.TabIndex = 1;
-            this.save.Text = "另存为";
-            this.save.UseVisualStyleBackColor = true;
-            this.save.Click += new System.EventHandler(this.save_Click);
+            save.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            save.Location = new Point(262, 35);
+            save.Margin = new Padding(3, 4, 3, 4);
+            save.Name = "save";
+            save.Size = new Size(106, 49);
+            save.TabIndex = 1;
+            save.Text = "另存为";
+            save.UseVisualStyleBackColor = true;
+            save.Click += save_Click;
             // 
             // add
             // 
-            this.add.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.add.Location = new System.Drawing.Point(54, 107);
-            this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(77, 37);
-            this.add.TabIndex = 2;
-            this.add.Text = "+";
-            this.add.UseVisualStyleBackColor = true;
-            this.add.Click += new System.EventHandler(this.add_Click);
+            add.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            add.Location = new Point(62, 126);
+            add.Margin = new Padding(3, 4, 3, 4);
+            add.Name = "add";
+            add.Size = new Size(88, 44);
+            add.TabIndex = 2;
+            add.Text = "+";
+            add.UseVisualStyleBackColor = true;
+            add.Click += add_Click;
             // 
             // delete
             // 
-            this.delete.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.delete.Location = new System.Drawing.Point(167, 107);
-            this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(77, 37);
-            this.delete.TabIndex = 3;
-            this.delete.Text = "-";
-            this.delete.UseVisualStyleBackColor = true;
-            this.delete.Click += new System.EventHandler(this.delete_Click);
+            delete.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            delete.Location = new Point(191, 126);
+            delete.Margin = new Padding(3, 4, 3, 4);
+            delete.Name = "delete";
+            delete.Size = new Size(88, 44);
+            delete.TabIndex = 3;
+            delete.Text = "-";
+            delete.UseVisualStyleBackColor = true;
+            delete.Click += delete_Click;
             // 
             // itemList
             // 
-            this.itemList.FormattingEnabled = true;
-            this.itemList.ItemHeight = 17;
-            this.itemList.Location = new System.Drawing.Point(54, 174);
-            this.itemList.Name = "itemList";
-            this.itemList.Size = new System.Drawing.Size(190, 276);
-            this.itemList.TabIndex = 4;
-            this.itemList.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            itemList.FormattingEnabled = true;
+            itemList.ItemHeight = 20;
+            itemList.Location = new Point(62, 205);
+            itemList.Margin = new Padding(3, 4, 3, 4);
+            itemList.Name = "itemList";
+            itemList.Size = new Size(217, 384);
+            itemList.TabIndex = 4;
+            itemList.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(367, 174);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 21);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Id";
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(462, 207);
+            label1.Name = "label1";
+            label1.Size = new Size(25, 21);
+            label1.TabIndex = 5;
+            label1.Text = "Id";
             // 
             // idT
             // 
-            this.idT.Location = new System.Drawing.Point(398, 175);
-            this.idT.Name = "idT";
-            this.idT.Size = new System.Drawing.Size(121, 23);
-            this.idT.TabIndex = 6;
-            this.idT.TextChanged += new System.EventHandler(this.idT_TextChanged);
+            idT.Location = new Point(493, 205);
+            idT.Margin = new Padding(3, 4, 3, 4);
+            idT.Name = "idT";
+            idT.Size = new Size(138, 25);
+            idT.TabIndex = 6;
+            idT.TextChanged += idT_TextChanged;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(349, 215);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 21);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "type";
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(370, 256);
+            label2.Name = "label2";
+            label2.Size = new Size(117, 21);
+            label2.TabIndex = 7;
+            label2.Text = "type(数据类型)";
             // 
             // typeCom
             // 
-            this.typeCom.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.typeCom.FormattingEnabled = true;
-            this.typeCom.Location = new System.Drawing.Point(398, 216);
-            this.typeCom.Name = "typeCom";
-            this.typeCom.Size = new System.Drawing.Size(178, 29);
-            this.typeCom.TabIndex = 8;
-            this.typeCom.SelectedIndexChanged += new System.EventHandler(this.typeCom_SelectedIndexChanged);
+            typeCom.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            typeCom.FormattingEnabled = true;
+            typeCom.Location = new Point(493, 253);
+            typeCom.Margin = new Padding(3, 4, 3, 4);
+            typeCom.Name = "typeCom";
+            typeCom.Size = new Size(203, 29);
+            typeCom.TabIndex = 8;
+            typeCom.SelectedIndexChanged += typeCom_SelectedIndexChanged;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(310, 267);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 21);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "childType";
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(299, 311);
+            label3.Name = "label3";
+            label3.Size = new Size(188, 21);
+            label3.TabIndex = 9;
+            label3.Text = "childType(对应界面类型)";
             // 
             // childTypeCom
             // 
-            this.childTypeCom.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.childTypeCom.FormattingEnabled = true;
-            this.childTypeCom.Location = new System.Drawing.Point(398, 263);
-            this.childTypeCom.Name = "childTypeCom";
-            this.childTypeCom.Size = new System.Drawing.Size(178, 29);
-            this.childTypeCom.TabIndex = 10;
-            this.childTypeCom.SelectedIndexChanged += new System.EventHandler(this.childTypeCom_SelectedIndexChanged);
+            childTypeCom.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            childTypeCom.FormattingEnabled = true;
+            childTypeCom.Location = new Point(493, 308);
+            childTypeCom.Margin = new Padding(3, 4, 3, 4);
+            childTypeCom.Name = "childTypeCom";
+            childTypeCom.Size = new Size(203, 29);
+            childTypeCom.TabIndex = 10;
+            childTypeCom.SelectedIndexChanged += childTypeCom_SelectedIndexChanged;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(298, 308);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 21);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "description";
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(303, 365);
+            label4.Name = "label4";
+            label4.Size = new Size(184, 21);
+            label4.TabIndex = 11;
+            label4.Text = "description(来源的描述)";
             // 
             // desT
             // 
-            this.desT.Location = new System.Drawing.Point(398, 309);
-            this.desT.Name = "desT";
-            this.desT.Size = new System.Drawing.Size(178, 23);
-            this.desT.TabIndex = 12;
-            this.desT.TextChanged += new System.EventHandler(this.desT_TextChanged);
+            desT.Location = new Point(493, 363);
+            desT.Margin = new Padding(3, 4, 3, 4);
+            desT.Name = "desT";
+            desT.Size = new Size(203, 25);
+            desT.TabIndex = 12;
+            desT.TextChanged += desT_TextChanged;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(319, 421);
+            label5.Name = "label5";
+            label5.Size = new Size(95, 21);
+            label5.TabIndex = 13;
+            label5.Text = "sourceMap";
+            // 
+            // sourceTypeCom
+            // 
+            sourceTypeCom.FormattingEnabled = true;
+            sourceTypeCom.Location = new Point(428, 473);
+            sourceTypeCom.Name = "sourceTypeCom";
+            sourceTypeCom.Size = new Size(203, 28);
+            sourceTypeCom.TabIndex = 14;
+            sourceTypeCom.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // addMap
+            // 
+            addMap.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            addMap.Location = new Point(433, 408);
+            addMap.Margin = new Padding(3, 4, 3, 4);
+            addMap.Name = "addMap";
+            addMap.Size = new Size(88, 44);
+            addMap.TabIndex = 15;
+            addMap.Text = "+";
+            addMap.UseVisualStyleBackColor = true;
+            addMap.Click += addMap_Click;
+            // 
+            // deleteMap
+            // 
+            deleteMap.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            deleteMap.Location = new Point(543, 408);
+            deleteMap.Margin = new Padding(3, 4, 3, 4);
+            deleteMap.Name = "deleteMap";
+            deleteMap.Size = new Size(88, 44);
+            deleteMap.TabIndex = 16;
+            deleteMap.Text = "-";
+            deleteMap.UseVisualStyleBackColor = true;
+            deleteMap.Click += deleteMap_Click;
+            // 
+            // sourceMapList
+            // 
+            sourceMapList.FormattingEnabled = true;
+            sourceMapList.ItemHeight = 20;
+            sourceMapList.Location = new Point(665, 461);
+            sourceMapList.Name = "sourceMapList";
+            sourceMapList.Size = new Size(198, 84);
+            sourceMapList.TabIndex = 17;
+            sourceMapList.SelectedIndexChanged += sourceMapList_SelectedIndexChanged;
+            // 
+            // sourceIdT
+            // 
+            sourceIdT.Location = new Point(428, 520);
+            sourceIdT.Margin = new Padding(3, 4, 3, 4);
+            sourceIdT.Name = "sourceIdT";
+            sourceIdT.Size = new Size(203, 25);
+            sourceIdT.TabIndex = 18;
+            sourceIdT.TextChanged += sourceIdT_TextChanged;
+            // 
+            // sourceType
+            // 
+            sourceType.AutoSize = true;
+            sourceType.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            sourceType.Location = new Point(319, 475);
+            sourceType.Name = "sourceType";
+            sourceType.Size = new Size(96, 21);
+            sourceType.TabIndex = 19;
+            sourceType.Text = "sourceType";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(330, 524);
+            label6.Name = "label6";
+            label6.Size = new Size(75, 21);
+            label6.TabIndex = 20;
+            label6.Text = "sourceId";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(827, 473);
-            this.Controls.Add(this.desT);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.childTypeCom);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.typeCom);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.idT);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.itemList);
-            this.Controls.Add(this.delete);
-            this.Controls.Add(this.add);
-            this.Controls.Add(this.save);
-            this.Controls.Add(this.open);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(945, 705);
+            Controls.Add(label6);
+            Controls.Add(sourceType);
+            Controls.Add(sourceIdT);
+            Controls.Add(sourceMapList);
+            Controls.Add(deleteMap);
+            Controls.Add(addMap);
+            Controls.Add(sourceTypeCom);
+            Controls.Add(label5);
+            Controls.Add(desT);
+            Controls.Add(label4);
+            Controls.Add(childTypeCom);
+            Controls.Add(label3);
+            Controls.Add(typeCom);
+            Controls.Add(label2);
+            Controls.Add(idT);
+            Controls.Add(label1);
+            Controls.Add(itemList);
+            Controls.Add(delete);
+            Controls.Add(add);
+            Controls.Add(save);
+            Controls.Add(open);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
 
@@ -215,5 +322,13 @@
         private ComboBox childTypeCom;
         private Label label4;
         private TextBox desT;
+        private Label label5;
+        private ComboBox sourceTypeCom;
+        private Button addMap;
+        private Button deleteMap;
+        private ListBox sourceMapList;
+        private TextBox sourceIdT;
+        private Label sourceType;
+        private Label label6;
     }
 }
